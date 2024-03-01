@@ -7,8 +7,8 @@ body {
     padding: 0 !important;
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)), url('../assets/images/blue-portrait.jpg');
+    background-image: linear-gradient(rgba(2, 22, 72, 0.3),
+    rgba(2, 22, 72, 0.3)), url('../assets/images/blue-portrait.jpg');
 }
 
 body::-webkit-scrollbar {
@@ -160,10 +160,24 @@ body::-webkit-scrollbar {
     background-color: #111111 !important;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
+    background-image: url('../assets/images/dark-bg.jpg');
+    background-size: cover;
+}
+
+.form-control {
+  background-color: #021648;
+}
+
+.form-select {
+  background-color: #021648;
+}
+
+.navbar {
+  background-color: #021648;
 }
 
 footer {
-    background-color: #111111 !important;
+    background-color: #021648 !important;
     margin-top: -0.5rem;
     padding-bottom: 5rem;
 }
