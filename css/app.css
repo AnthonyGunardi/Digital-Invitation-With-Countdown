@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
     display: none !important;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.3)), url('../assets/images/blue.jpg');
@@ -29,7 +29,13 @@ body::-webkit-scrollbar {
 
 .font-esthetic {
     /* font-family: "Montserrat", sans-serif !important; */
+    font-family: "Great Vibes", cursive;
     color: #ffffff !important;
+}
+
+.font-handwrite {
+  font-family: "Lobster", sans-serif;
+  color: #ffffff !important;
 }
 
 .font-arabic {
@@ -64,7 +70,8 @@ body::-webkit-scrollbar {
     inset: 0 !important;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/images/cover-landscape.jpeg');
+    background-image: linear-gradient(rgba(2, 22, 72, 0.3),
+    rgba(2, 22, 72, 0.3)),url('../assets/images/cover-landscape.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -72,11 +79,11 @@ body::-webkit-scrollbar {
     z-index: 1056 !important;
 }
 
-@media (orientation: portrait) {
+@media screen and (orientation: portrait) {
   .loading-page {
     background-image: url('../assets/images/cover.jpeg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
   }
@@ -86,7 +93,7 @@ body::-webkit-scrollbar {
     overflow-wrap: break-word !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container-gift {
     max-width: 100vw;
   }
@@ -157,7 +164,6 @@ body::-webkit-scrollbar {
 }
 
 .dark-section {
-    background-color: #111111 !important;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
     background-image: url('../assets/images/dark-bg.jpg');
