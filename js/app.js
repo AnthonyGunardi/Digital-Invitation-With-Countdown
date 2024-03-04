@@ -501,12 +501,12 @@ const comment = (() => {
     let temporaryID = null;
 
     const convertMarkdownToHTML = (input) => {
-        return input
-            .replace(/\*(?=\S)(.*?)(?<!\s)\*/s, '<strong class="text-dark">$1</strong>')
-            .replace(/\_(?=\S)(.*?)(?<!\s)\_/s, '<em class="text-dark">$1</em>')
-            .replace(/\~(?=\S)(.*?)(?<!\s)\~/s, '<del class="text-dark">$1</del>')
-            .replace(/\`\`\`(?=\S)(.*?)(?<!\s)\`\`\`/s, '<code class="font-monospace text-dark">$1</code>');
-    };
+      return input
+          .replace(/\*(.*?)\*/gs, '<strong class="text-dark">$1</strong>')
+          .replace(/_(.*?)_/gs, '<em class="text-dark">$1</em>')
+          .replace(/~(.*?)~/gs, '<del class="text-dark">$1</del>')
+          .replace(/```(.*?)```/gs, '<code class="font-monospace text-dark">$1</code>');
+  };
 
     const resetForm = () => {
 
