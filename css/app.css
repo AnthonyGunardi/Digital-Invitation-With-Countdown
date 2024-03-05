@@ -44,6 +44,10 @@ body::-webkit-scrollbar {
     color: #ffffff !important;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .img-crop {
     width: 14rem;
     height: 14rem;
@@ -195,6 +199,17 @@ body::-webkit-scrollbar {
     animation: love 5s ease-in-out infinite;
 }
 
+.birthday-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthday-age {
+  font-size: 3.8rem;
+}
+
 .dark-section {
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
@@ -203,19 +218,19 @@ body::-webkit-scrollbar {
 }
 
 .form-control {
-  background-color: #172853;
+  background-color: #002073;
 }
 
 .form-select {
-  background-color: #172853;
+  background-color: #002073;
 }
 
 .navbar {
-  background-color: #021648;
+  background-color: #002073;
 }
 
 footer {
-    background-color: #172853 !important;
+    background-color: #002073 !important;
     margin-top: -0.5rem;
     padding-bottom: 5rem;
 }

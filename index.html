@@ -30,7 +30,7 @@
     <!-- Appearance -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Miraculous Journey Anton & Mega">
-    <meta name="theme-color" content="#021648">
+    <meta name="theme-color" content="#002073">
     <meta name="color-scheme" content="dark">
     <link rel="canonical" href="https://ciptainsanaktif.com/invitation-2">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -122,9 +122,13 @@
                     </div>
                 </div>
 
-                <h1 class="font-handwrite my-4" style="font-size: 1.5rem;">25th Wedding Anniversary<br>The Anton & Megawati</h1>
+                <h1 class="font-handwrite my-3" style="font-size: 1.5rem;">25th Wedding Anniversary<br>The Anton & Megawati</h1>
                 <h1 class="font-handwrite my-1" style="font-size: 1.5rem;">&</h1>
-                <h1 class="font-handwrite my-4" style="font-size: 1.5rem;">Sweet Seventeen<br>Matthew Deanovan</h1>
+                <div class="birthday-info">
+                  <h1 class="font-handwrite my-3 birthday-age">17</h1>
+                  <h1 class="font-handwrite my-3" style="font-size: 1.5rem;">Sweet Seventeen<br>Matthew Deanovan</h1>
+                </div>
+
                 <p class="mt-2 mb-2" style="font-size: 1.5rem;">Sunday, 16 June 2024</p>
 
                 <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Miraculous%20Journey%20of%20Anton%20and%20Mega&details=Miraculous%20Journey%20of%20Anton%20and%20Mega">
@@ -132,18 +136,18 @@
                 </a>
 
                 <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
-                    <div class="mouse-animation">
+                    <div class="mouse-animation hidden">
                         <div class="scroll-animation"></div>
                     </div>
                 </div>
 
-                <p class="m-0">Scroll Down</p>
+                <p class="m-0 hidden">Scroll Down</p>
             </div>
         </section>
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#172853" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <path fill="#002073" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
 
         <!-- Tanggal -->
@@ -158,16 +162,16 @@
                       <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
                       <div class="row justify-content-center" data-waktu="2024-06-16 09:00:00" id="tampilan-waktu">
                           <div class="col-3 p-1">
-                              <h2 class="d-inline m-0 p-0" id="hari">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Hari</small>
+                              <h2 class="d-inline m-0 p-0" id="hari">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Days</small>
                           </div>
                           <div class="col-3 p-1">
-                              <h2 class="d-inline m-0 p-0" id="jam">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Jam</small>
+                              <h2 class="d-inline m-0 p-0" id="jam">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Hours</small>
                           </div>
                           <div class="col-3 p-1">
-                              <h2 class="d-inline m-0 p-0" id="menit">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Menit</small>
+                              <h2 class="d-inline m-0 p-0" id="menit">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Minutes</small>
                           </div>
                           <div class="col-3 p-1">
-                              <h2 class="d-inline m-0 p-0" id="detik">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Detik</small>
+                              <h2 class="d-inline m-0 p-0" id="detik">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Seconds</small>
                           </div>
                       </div>
                   </div>
@@ -208,7 +212,7 @@
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#172853" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+          <path fill="#002073" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
 
         <!-- Mempelai -->
@@ -234,7 +238,7 @@
 
                 <!-- Wave Separator -->
                 <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                  <path fill="#172853" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+                  <path fill="#002073" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
                 </svg>
 
                 <!-- Love animation -->
@@ -280,6 +284,7 @@
                           <img src="./assets/images/matthew_deanovan.jpg" alt="cewe" onclick="util.modal(this)">
                       </div>
                       <p class="mt-3 mb-0" style="font-size: 1.25rem;">Sweet Seventeen<br>Matthew Deanovan</p>
+
                     </div>
                 </div>
 
@@ -297,7 +302,7 @@
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#172853" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            <path fill="#002073" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
 
         <!-- Ayat -->
@@ -336,7 +341,7 @@
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#172853" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+          <path fill="#002073" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
         </svg>
 
         <!-- Hadiah -->
@@ -348,9 +353,12 @@
                   <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
 
                   <p class="mb-1" style="font-size: 0.9rem;">
-                    Kami punya impian besar untuk menyiapkan dan membangun sebuah yayasan rumah rawat bagi anak-anak berkebutuhan khusus. 
+                    <!-- Kami punya impian besar untuk menyiapkan dan membangun sebuah yayasan rumah rawat bagi anak-anak berkebutuhan khusus. 
                     Untuk mendukung upaya kami menciptakan lingkungan yang inklusif bagi masa depan mereka, tanpa mengurangi rasa hormat, 
-                    kami sangat mengapresiasi tanda kasih dalam bentuk cashless yang bisa ditransfer ke rekening sebagai berikut :
+                    kami sangat mengapresiasi tanda kasih dalam bentuk cashless yang bisa ditransfer ke rekening sebagai berikut : -->
+                    We have a big dream to establish and build a care home foundation for children with special needs. To support our efforts 
+                    in creating an inclusive environment for their future, without diminishing respect, we highly appreciate acts of kindness 
+                    in the form of cashless donations that can be transferred to the following account:
                   </p>
 
                   <div class="overflow-x-hidden">
@@ -360,10 +368,10 @@
                               <img src="https://www.pngfind.com/pngs/b/683-6838145_bca-png.png" class="img-fluid w-50 rounded" alt="bni">
 
                               <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">277-1198777</p>
-                              <p class="card-text" style="font-size: 0.9rem;">A/N : Megawati</p>
+                              <p class="card-text" style="font-size: 0.9rem;">Megawati</p>
 
                               <!-- Ubah juga data-nomer sesuai dengan no rekening -->
-                              <button class="btn btn-light btn-sm rounded-3" data-nomer="2771198777" onclick="util.salin(this)" autofocus>Salin No. Rekening</button>
+                              <button class="btn btn-light btn-sm rounded-3" data-nomer="2771198777" onclick="util.salin(this)" autofocus>Copy account number</button>
                           </div>
 
                       </div>
@@ -374,7 +382,7 @@
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#172853" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+          <path fill="#002073" fill-opacity="1" d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
         </svg>
 
         <!-- Ucapan -->
@@ -386,36 +394,37 @@
                     <div class="mb-1" id="balasan"></div>
 
                     <div class="mb-3">
-                        <label for="form-nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control shadow-sm" id="form-nama" placeholder="Isikan Nama Anda">
+                        <label for="form-nama" class="form-label">Name</label>
+                        <input type="text" class="form-control shadow-sm" id="form-nama" placeholder="Fill with your name">
                     </div>
 
                     <div class="mb-3">
-                        <label for="form-kehadiran" class="form-label" id="label-kehadiran">Kehadiran</label>
+                        <label for="form-kehadiran" class="form-label" id="label-kehadiran">Attendance</label>
                         <select class="form-select shadow-sm" id="form-kehadiran">
-                            <option value="0" selected>Konfirmasi Kehadiran</option>
-                            <option value="1">Hadir</option>
-                            <option value="2">Berhalangan</option>
+                            <option value="0" selected>Attendance Confirmation</option>
+                            <option value="1">Will attend - 1 person</option>
+                            <option value="2">Will attend - 2 persons</option>
+                            <option value="3">Unable To Attend</option>
                         </select>
                     </div>
 
-                    <div class="mb-3">
+                    <!-- <div class="mb-3">
                         <label for="form-pesan" class="form-label">Ucapan</label>
                         <textarea class="form-control shadow-sm" id="form-pesan" rows="4" placeholder="Tulis Ucapan & Doa"></textarea>
-                    </div>
+                    </div> -->
 
                     <div class="d-flex">
                         <button class="flex-fill btn btn-danger btn-sm rounded-3 shadow m-1" style="display: none;" onclick="comment.batal()" id="batal">
-                            Batal<i class="fa-solid fa-xmark ms-1"></i>
+                            Cancel<i class="fa-solid fa-xmark ms-1"></i>
                         </button>
                         <button class="flex-fill btn btn-success btn-sm rounded-3 shadow m-1" style="display: none;" onclick="comment.balas()" id="balas">
-                            Balas<i class="fa-solid fa-reply ms-1"></i>
+                            Reply<i class="fa-solid fa-reply ms-1"></i>
                         </button>
                         <button class="flex-fill btn btn-warning btn-sm rounded-3 shadow m-1" style="display: none;" onclick="comment.ubah()" id="ubah">
-                            Ubah<i class="fa-solid fa-pen-to-square ms-1"></i>
+                            Change<i class="fa-solid fa-pen-to-square ms-1"></i>
                         </button>
                         <button class="flex-fill btn btn-primary btn-sm rounded-3 shadow m-1" onclick="comment.kirim()" id="kirim">
-                            Kirim<i class="fa-solid fa-paper-plane ms-1"></i>
+                            Send<i class="fa-solid fa-paper-plane ms-1"></i>
                         </button>
                     </div>
                 </div>
@@ -423,7 +432,7 @@
                 <!-- put id="daftar-ucapan" to show "Daftar Ucapan" from database -->
                 <div class="rounded-4 mt-4 mb-2" id=""></div>
 
-                <nav class="d-flex justify-content-center mb-0">
+                <!-- <nav class="d-flex justify-content-center mb-0">
                     <ul class="pagination mb-0">
                         <li class="page-item disabled" id="previous">
                             <button class="page-link" onclick="pagination.previous(this)" aria-label="Sebelumnya">
@@ -439,13 +448,13 @@
                             </button>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
         </section>
 
         <!-- Wave Separator -->
         <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#172853" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            <path fill="#002073" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
         </svg>
     </main>
 
@@ -492,7 +501,7 @@
             <div class="mt-4 mb-button text-center">
               <div id="nama-tamu"></div>
               <button type="button" class="btn btn-light shadow rounded-4 " onclick="util.buka(this)">
-                <i class="fa-solid fa-envelope-open me-2"></i>Buka Undangan
+                <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
               </button>
             </div>
         </div>
