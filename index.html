@@ -353,9 +353,6 @@
                   <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
 
                   <p class="mb-1" style="font-size: 0.9rem;">
-                    <!-- Kami punya impian besar untuk menyiapkan dan membangun sebuah yayasan rumah rawat bagi anak-anak berkebutuhan khusus. 
-                    Untuk mendukung upaya kami menciptakan lingkungan yang inklusif bagi masa depan mereka, tanpa mengurangi rasa hormat, 
-                    kami sangat mengapresiasi tanda kasih dalam bentuk cashless yang bisa ditransfer ke rekening sebagai berikut : -->
                     We have a big dream to establish and build a care home foundation for children with special needs. To support our efforts 
                     in creating an inclusive environment for their future, without diminishing respect, we highly appreciate acts of kindness 
                     in the form of cashless donations that can be transferred to the following account:
@@ -412,10 +409,10 @@
                         Loading ...
                       </div>
                       <div class="mt-3 form-control sent-msg d-none" role="alert">
-                        Your message has been sent. Thank you!
+                        Your message has been sent. Thank you.
                       </div>
                       <div class="mt-3 form-control error-msg d-none" role="alert">
-                        Sorry, Error
+                        Sorry, Error while send message.
                       </div>
                     <!-- <div class="mb-3">
                         <label for="form-pesan" class="form-label">Ucapan</label>
@@ -535,7 +532,7 @@
                     document.getElementById('progress-info').style.display = 'block';
                 </script>
                 <noscript>
-                    <small class="mt-1 text-danger">Maaf, undangan ini perlu javascript</small>
+                    <small class="mt-1 text-danger">Sorry, This invitation need javascript.</small>
                 </noscript>
             </div>
         </div>
@@ -562,7 +559,6 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyUX9gHAdJEBCtCJdQBEzMk95q5t_2kh6tJMsfpeyhHl6vnQsq8Qb7Yd8fx_J0qCsb9/exec'
         const form = document.forms['contact-form']
       
-        //ambil class tombol main DOM
         const alert_loading = document.querySelector('.loading-msg');
         const alert_success = document.querySelector('.sent-msg');
         const alert_error = document.querySelector('.error-msg');
@@ -571,14 +567,14 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
       
-          //saat diklik 
-          //tampil pesan loading dan hilangkan tombol
+          //when button is clicked
+          //show alert 'loading' and hide button
           btnSubmit.classList.toggle('d-none');
           alert_loading.classList.toggle('d-none');
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-              console.log('Success!', response)
-              //jika berhasil textbox kosong, tombol tampil, pesan berhasil, matikan pesan loading
+              console.log('Success send data to googlesheet', response)
+              //if success: textbox become empty, show button, show alert 'success', hide alert 'loading'
               form.reset();
               alert_loading.classList.toggle('d-none');
               alert_success.classList.toggle('d-none');

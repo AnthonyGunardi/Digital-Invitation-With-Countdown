@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
 }
 
 .font-esthetic {
-    /* font-family: "Montserrat", sans-serif !important; */
     font-family: "Great Vibes", cursive;
     color: #ffffff !important;
 }
@@ -124,6 +123,15 @@ body::-webkit-scrollbar {
     object-fit: cover;
 }
 
+@media screen and (orientation: landscape) {
+  .bgku > img {
+    content:url("../assets/images/cover-landscape.jpeg");
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .card-body {
     overflow-wrap: break-word !important;
 }
@@ -214,6 +222,12 @@ body::-webkit-scrollbar {
     margin-bottom: -0.5rem;
     background-image: url('../assets/images/dark-bg.jpg');
     background-size: cover;
+}
+
+@media screen and (orientation: landscape) {
+  .dark-section {
+    background-size: auto 100%;
+  }
 }
 
 .form-control {
