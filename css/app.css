@@ -230,6 +230,12 @@ body::-webkit-scrollbar {
   }
 }
 
+@media screen and (orientation: landscape) {
+  .w-50 {
+    width: 20% !important;
+  }
+}
+
 .form-control {
   background-color: #002073;
 }
